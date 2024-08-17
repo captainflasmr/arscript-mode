@@ -14,6 +14,12 @@
 ArtRage arscript files are specialized script files used by the ArtRage painting software to automate and record various painting actions and effects. These files encapsulate sequences of drawing commands, tool selections, color settings, and other actions that can be replayed to recreate the painting process. The arscript format includes structured elements such as keywords, modifiers, structured tags, and numerical values, allowing for detailed specification of both high-level actions and granular details like brush strokes and layer manipulations. The format aims to facilitate complex artistic workflows by enabling repeatable and shareable painting routines, making it an essential tool for digital artists using ArtRage.
 #+end_quote
 
+* Screenshot
+
+#+attr_org: :width 300px
+#+attr_html: :width 100%
+[[file:img/arscript-mode-00.jpg]]
+
 * Links
 
 https://www.artrage.com
