@@ -36,22 +36,37 @@ First version
 
 * Installation
 
-To install =arscript-mode=, you can use the following method:
+** use-package (MELPA)
 
-1. Clone the repository to your local machine:
-
-#+begin_src shell
-git clone https://github.com/captainflasmr/arscript-mode.git
+#+begin_src elisp
+(use-package arscript-mode)
 #+end_src
 
-2. Add the following to your Emacs configuration:
+** use-package (emacs 30+) directly from github
 
-#+begin_src emacs-lisp
-(add-to-list 'load-path "/path/to/arscript-mode/directory")
+Put the following into your emacs init file:
+
+#+begin_src elisp
+(use-package arscript-mode
+  :vc (:fetcher github :repo "captainflasmr/arscript-mode"))
+#+end_src
+
+** From source
+
+Download the `.el` file and place it in your Emacs `load-path` or in a specific source directory "~/source/repos/arscript-mode"
+
+Then either manually load it or add it to your configuration to be loaded at startup.
+
+#+begin_src elisp
 (require 'arscript-mode)
 #+end_src
 
-Replace "/path/to/arscript-mode/directory" with the actual path to where you've cloned or downloaded =arscript-mode=.
+OR
+
+#+begin_src elisp
+(use-package arscript-mode
+  :load-path "~/source/repos/arscript-mode")
+#+end_src
 
 * Usage
 
@@ -72,36 +87,28 @@ Contributions to =arscript-mode= are welcome! Whether it's bug reports, feature 
 * ISSUES
 
 #+begin: kanban :layout ("..." . 50) :scope nil :range ("TODO" . "DONE") :sort "O" :depth 3 :match "issues" :compressed t
-| TODO          | DOING        | DONE |
-|---------------+--------------+------|
-| [[file:README.org::*test issue 1][test issue 1]]  | [[file:README.org::*test issue 2][test issue 2]] |      |
-| [[file:README.org::*other issue 1][other issue 1]] |              |      |
-| [[file:README.org::*other issue 2][other issue 2]] |              |      |
+| TODO | DOING | DONE |
+|------+-------+------|
+
 #+end:
 
 * ROADMAP
 
 #+begin: kanban :layout ("..." . 100) :scope nil :range ("TODO" . "TODO") :sort "O" :depth 3 :match "roadmap" :compressed t
-| TODO           |
-|----------------|
-| [[file:README.org::*new function 1][new function 1]] |
-| [[file:README.org::*new function 2][new function 2]] |
+| TODO                                                                             |
+|----------------------------------------------------------------------------------|
+| [[file:README.org::*review syntactical keyword highlighting based on contents of arscript pdf manual][review syntactical keyword highlighting based on contents of arscript pdf manual]] |
+| [[file:README.org::*add text tranformation functions to affect arscript and hence ArtRage playback][add text tranformation functions to affect arscript and hence ArtRage playback]]   |
 #+end:
 
 * ISSUES (github)                                                    :issues:
 
-** TODO test issue 1
-** DOING test issue 2
-
 * ISSUES (other)                                                     :issues:
-
-** TODO other issue 1
-** TODO other issue 2
 
 * ROADMAP                                                           :roadmap:
 
-** TODO new function 1
-** TODO new function 2
+** TODO review syntactical keyword highlighting based on contents of arscript pdf manual
+** TODO add text tranformation functions to affect arscript and hence ArtRage playback
 
 * Testing
 
