@@ -1,0 +1,55 @@
+#+title: Change log of selected-window-accent-mode
+#+author: James Dyer
+#+email: captainflasmr@gmail.com
+#+language: en
+#+options: ':t toc:nil author:nil email:nil num:nil title:nil
+#+todo: TODO DOING | DONE
+#+startup: showall
+
+This document contains the release notes for each tagged commit on the
+project's main git repository: [[https://github.com/captainflasmr/arscript-mode]].
+
+With a roadmap and issues also supplied.
+
+* Versions
+
+** v0.1.0
+
+First version
+
+* Testing
+
+developing locally using:
+
+#+begin_src elisp
+(use-package arscript-mode
+   :load-path "~/repos/arscript-mode"
+#+end_src
+
+commiting to github then removing ~/.config/emacs/elpa/arscript-mode, changing emacs init to:
+
+#+begin_src elisp
+(use-package arscript-mode
+  :vc (:fetcher github :repo "captainflasmr/arscript-mode")
+#+end_src
+
+restart emacs and test
+
+* Validation
+
+** eval-buffer
+
+** flycheck
+
+** checkdoc
+
+Use =checkdoc= to make sure that your package follows the conventions for documentation strings, within reason.
+
+Buffer comments and tags:  Ok
+Documentation style:       Ok
+Message/Query text style:  Ok
+Unwanted Spaces:           Ok
+
+** package-lint-current-buffer
+
+=package-lint= to help identify common errors in package metadata.

@@ -1,0 +1,96 @@
+#+title: arscript-mode
+#+author: James Dyer
+#+email: captainflasmr@gmail.com
+#+language: en
+#+options: ':t toc:nil author:nil email:nil num:nil title:nil
+#+todo: TODO DOING | DONE
+#+startup: showall
+
+* Summary
+
+=arscript-mode= is an Emacs major mode designed to facilitate the editing of arscript files, providing syntax highlighting and other useful editing features tailored specifically for the arscript file format.
+
+* Whats New
+
+** v0.1.0
+
+First version
+
+* Features
+
+- Syntax highlighting for arscript-specific keywords, modifiers, and structures.
+- Custom indentation logic for arscript code blocks.
+- Auto-detection of .arscript files to automatically enable the mode.
+
+* Installation
+
+To install =arscript-mode=, you can use the following method:
+
+1. Clone the repository to your local machine:
+
+#+begin_src shell
+git clone https://github.com/captainflasmr/arscript-mode.git
+#+end_src
+
+2. Add the following to your Emacs configuration:
+
+#+begin_src emacs-lisp
+(add-to-list 'load-path "/path/to/arscript-mode/directory")
+(require 'arscript-mode)
+#+end_src
+
+Replace "/path/to/arscript-mode/directory" with the actual path to where you've cloned or downloaded =arscript-mode=.
+
+* Usage
+
+Opening any .arscript file with Emacs should automatically enable =arscript-mode=, providing you with syntax highlighting and indentation support for editing arscript files.
+
+* Customization
+
+Currently, =arscript-mode= provides a basic set of features optimized for general usage. Future versions may include customizable options based on user feedback.
+
+* Contributing
+
+Contributions to =arscript-mode= are welcome! Whether it's bug reports, feature suggestions, or code contributions, feel free to reach out or submit pull requests on GitHub.
+
+* ISSUES
+
+#+begin: kanban :layout ("..." . 50) :scope nil :range ("TODO" . "DONE") :sort "O" :depth 3 :match "issues" :compressed t
+| TODO          | DOING        | DONE |
+|---------------+--------------+------|
+| [[file:README.org::*test issue 1][test issue 1]]  | [[file:README.org::*test issue 2][test issue 2]] |      |
+| [[file:README.org::*other issue 1][other issue 1]] |              |      |
+| [[file:README.org::*other issue 2][other issue 2]] |              |      |
+#+end:
+
+* ROADMAP
+
+#+begin: kanban :layout ("..." . 100) :scope nil :range ("TODO" . "TODO") :sort "O" :depth 3 :match "roadmap" :compressed t
+| TODO           |
+|----------------|
+| [[file:README.org::*new function 1][new function 1]] |
+| [[file:README.org::*new function 2][new function 2]] |
+#+end:
+
+* ISSUES (github)                                                    :issues:
+
+** TODO test issue 1
+** DOING test issue 2
+
+* ISSUES (other)                                                     :issues:
+
+** TODO other issue 1
+** TODO other issue 2
+
+* ROADMAP                                                           :roadmap:
+
+** TODO new function 1
+** TODO new function 2
+
+* Testing
+
+See CHANGELOG.org
+
+* Alternatives
+
+As far as I can tell this is the first Emacs minor mode supporting the arscript format.
