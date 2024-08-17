@@ -9,8 +9,6 @@
 This document contains the release notes for each tagged commit on the
 project's main git repository: [[https://github.com/captainflasmr/arscript-mode]].
 
-With a roadmap and issues also supplied.
-
 * Versions
 
 ** v0.1.0
