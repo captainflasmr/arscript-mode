@@ -116,4 +116,4 @@ See CHANGELOG.org
 
 * Alternatives
 
-As far as I can tell this is the first Emacs minor mode supporting the arscript format.
+As far as I can tell this is the first Emacs major mode supporting the arscript format.

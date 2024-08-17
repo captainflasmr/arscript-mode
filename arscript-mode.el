@@ -59,8 +59,7 @@
                 (setq cur-indent (+ (current-indentation) tab-width))
                 (setq not-indented nil))
               ((bobp)
-                (setq not-indented nil))
-              ))))
+                (setq not-indented nil))))))
       (indent-line-to (or cur-indent (current-indentation) 0)))))
 
 ;;;###autoload
@@ -135,9 +134,7 @@
         ;; Single numerical value
         ("\\([A-Za-z]+:\\)\s+\\([0-9\\.s]+\\)"
           (1 font-lock-keyword-face)
-          (2 font-lock-constant-face))
-
-        )))
+          (2 font-lock-constant-face)))))
   ;; Comments
   (setq comment-start "//")
   (setq comment-end "")
