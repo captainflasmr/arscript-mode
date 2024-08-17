@@ -10,6 +10,18 @@
 
 =arscript-mode= is an Emacs major mode designed to facilitate the editing of arscript files, providing syntax highlighting and other useful editing features tailored specifically for the arscript file format.
 
+#+begin_quote
+ArtRage arscript files are specialized script files used by the ArtRage painting software to automate and record various painting actions and effects. These files encapsulate sequences of drawing commands, tool selections, color settings, and other actions that can be replayed to recreate the painting process. The arscript format includes structured elements such as keywords, modifiers, structured tags, and numerical values, allowing for detailed specification of both high-level actions and granular details like brush strokes and layer manipulations. The format aims to facilitate complex artistic workflows by enabling repeatable and shareable painting routines, making it an essential tool for digital artists using ArtRage.
+#+end_quote
+
+* Links
+
+https://www.artrage.com
+
+https://www.artrage.com/manuals/scripts/
+
+https://www.artrage.com/manuals/scripts/script-editing-tips/artrage-scripting-guide/
+
 * Whats New
 
 ** v0.1.0
@@ -44,6 +56,10 @@ Replace "/path/to/arscript-mode/directory" with the actual path to where you've 
 * Usage
 
 Opening any .arscript file with Emacs should automatically enable =arscript-mode=, providing you with syntax highlighting and indentation support for editing arscript files.
+
+If you are not an ArtRage user and are just curious about this specialized ArtRage painting playback script then there is an example attached to demonstrate the functionality of this mode :
+
+[[file:arscript/Example.arscript]]
 
 * Customization
 
